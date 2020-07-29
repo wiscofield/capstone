@@ -1,0 +1,63 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(241, 242, 243);
+    font-family: "Playfair Display", serif;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.1fr 0.6fr;
+        gap: 1px 1px;
+        grid-template-areas: "header header header" "post post aside";
+      }
+      
+    .aside { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.3fr 0.7fr;
+        gap: 1px 1px;
+        grid-template-areas: ". . ." "archive archive archive";
+        grid-area: aside;
+    }
+
+    .archive {
+        grid-area: archive;
+    }
+
+      
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 0.5fr;
+        gap: 1px 1px;
+        grid-template-areas: ". . ." "nav nav nav";
+        grid-area: header;
+      }
+      
+      .nav { 
+          grid-area: nav; 
+        }
+      
+      .post { 
+          grid-area: post;
+         } 
+
+ 

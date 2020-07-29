@@ -8,6 +8,10 @@ body {
   max-width: 720px;
 }
 
+h1 {
+  text-align: center;
+}
+
 li {
   list-style-type: square;
 }
@@ -24,6 +28,10 @@ tbody {
 
 .table-time {
   background-color: rgb(174, 189, 204);
+}
+
+td {
+  background-color: white;
 }
 
 blockquote {

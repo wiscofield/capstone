@@ -9,7 +9,12 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+h2 {
+  color: rgb(159, 159, 241);
 }
 
 li {
@@ -38,6 +43,15 @@ blockquote {
   font-family: Garamond, Arial, Helvetica, sans-serif;
 }
 
+#quote-source {
+  text-align: rigth;
+}
+
 #credits {
-  text-align: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+a {
+  color: blue;
 }

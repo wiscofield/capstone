@@ -1,3 +1,7 @@
+
+/* OK so basically this was a hot mess for me... 
+I figured out some stuff but it just all looked wrong(re: text formatting/margins) 
+so i started again in a dummy file i created ....  */
 html{
   margin: auto;
 }
@@ -12,8 +16,6 @@ body{
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 10% 90%;
-
-
 }
 
 p { 
@@ -33,12 +35,12 @@ p {
     .aside { 
         /* display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.3fr 0.7fr; */
+        grid-template-rows: 1.3fr 0.7fr; 
         gap: 20px 20px;
         grid-template-areas: ". . ." "archive archive archive";
         grid-area: aside;
         border-top-width: 3px;
-        border-top-color: #5e5e5e;
+        
         text-align: justify;
     }
 

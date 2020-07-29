@@ -1,0 +1,56 @@
+html{
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.header{
+  background-color: aliceblue;
+  padding: 0.2em;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(11, 11, 68, 0.541);
+}
+/* .nav {
+  background-color: rgba(63, 156, 236, 0.829), 0.925);   
+} 
+THIS DIDN'T SEEM TO WORK.... */
+
+#namehead{
+  font-size: 35px;
+  /* font-weight: bold; */
+}
+
+#namepost {
+  font-size:55px;
+  /* font-weight:bolder; */
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height:800px;
+}
+
+.subgrid1 div{
+      /* possibly consider changing this subgrid to 
+      just formatting changes in the html ?????*/
+      display: grid;
+      grid-template-rows: auto 4fr;
+  
+  }
+
+      .title {
+          background-color: rgba(187, 172, 187, 0.842);
+      }
+
+      .content{
+          background-color: rgb(252, 231, 252);
+      }
+
+.subgrid2 div{
+   display: grid;
+   grid-template-rows: 5fr 1fr;
+  background-color: bisque;
+  }
+
+

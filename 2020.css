@@ -1,6 +1,5 @@
 html{
-    margin: 0;
-    padding: 0;
+  margin: auto;
 }
 
 body{
@@ -11,7 +10,9 @@ body{
 
 .grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 90%;
+
 
 }
 
@@ -21,21 +22,24 @@ p {
 	}
 
 
-    .grid {
+    /* .grid {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 0.1fr 0.6fr;
-        gap: 1px 1px;
-        grid-template-areas: "header header header" "post post aside";
+        grid-template-columns: 3fr 1fr ;
+        grid-template-rows: 0.1fr 0.9fr;
+        gap: 20px 20px;
+        grid-template-areas: "header header" "post aside";
       }
       
     .aside { 
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.3fr 0.7fr;
-        gap: 1px 1px;
+        grid-template-rows: 1.3fr 0.7fr; */
+        gap: 20px 20px;
         grid-template-areas: ". . ." "archive archive archive";
         grid-area: aside;
+        border-top-width: 3px;
+        border-top-color: #5e5e5e;
+        text-align: justify;
     }
 
     .archive {
@@ -50,6 +54,10 @@ p {
         gap: 1px 1px;
         grid-template-areas: ". . ." "nav nav nav";
         grid-area: header;
+        border-bottom-width: 3px;
+        border-bottom-color: #5e5e5e;
+        text-align: left;
+        font-size: 25px;
       }
       
       .nav { 
@@ -58,6 +66,8 @@ p {
       
       .post { 
           grid-area: post;
-         } 
+          border-right-width: 3px;
+          border-right-color: #5e5e5e;
+         }  */
 
  

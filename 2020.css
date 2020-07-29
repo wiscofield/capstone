@@ -5,7 +5,7 @@
       }
       
       .header{
-          background-color: aliceblue;
+          background-color: rgb(231, 198, 88);
           padding: 0.2em;
           border-bottom-width: 2px;
           border-bottom-color: rgba(11, 11, 68, 0.541);
@@ -20,10 +20,7 @@
           /* font-weight: bold; */
       }
       
-      #namepost {
-          font-size:55px;
-          /* font-weight:bolder; */
-      }
+   
       
       .container{
           display: grid;

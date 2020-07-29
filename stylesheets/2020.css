@@ -4,8 +4,14 @@ html{
 }
 
 body{
-    font: garamond, sans-serif;
+    background-color: rgb(198, 220, 228);
+    font-family: "Playfair Display", serif;
 
+}
+
+.grid {
+display: grid;
+grid-template-columns: 20% 60% 20%;
 }
 
 p { 

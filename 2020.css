@@ -1,75 +1,55 @@
-
-/* OK so basically this was a hot mess for me... 
-I figured out some stuff but it just all looked wrong(re: text formatting/margins) 
-so i started again in a dummy file i created ....  */
-html{
-  margin: auto;
-}
-
-body{
-    background-color: rgb(241, 242, 243);
-    font-family: "Playfair Display", serif;
-
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 10% 90%;
-}
-
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-
-
-    /* .grid {
-        display: grid;
-        grid-template-columns: 3fr 1fr ;
-        grid-template-rows: 0.1fr 0.9fr;
-        gap: 20px 20px;
-        grid-template-areas: "header header" "post aside";
+ html{
+     font-family: "Playfair Display", serif;
+     font-size: 20px;
+          padding: 30px;
       }
       
-    .aside { 
-        /* display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.3fr 0.7fr; 
-        gap: 20px 20px;
-        grid-template-areas: ". . ." "archive archive archive";
-        grid-area: aside;
-        border-top-width: 3px;
-        
-        text-align: justify;
-    }
-
-    .archive {
-        grid-area: archive;
-    }
-
+      .header{
+          background-color: aliceblue;
+          padding: 0.2em;
+          border-bottom-width: 2px;
+          border-bottom-color: rgba(11, 11, 68, 0.541);
+      }
+      /* .nav {
+          background-color: rgba(63, 156, 236, 0.829), 0.925);   
+      } 
+      THIS DIDN'T SEEM TO WORK.... */
       
-    .header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.5fr 0.5fr;
-        gap: 1px 1px;
-        grid-template-areas: ". . ." "nav nav nav";
-        grid-area: header;
-        border-bottom-width: 3px;
-        border-bottom-color: #5e5e5e;
-        text-align: left;
-        font-size: 25px;
+      #namehead{
+          font-size: 35px;
+          /* font-weight: bold; */
       }
       
-      .nav { 
-          grid-area: nav; 
-        }
+      #namepost {
+          font-size:55px;
+          /* font-weight:bolder; */
+      }
       
-      .post { 
-          grid-area: post;
-          border-right-width: 3px;
-          border-right-color: #5e5e5e;
-         }  */
-
- 
+      .container{
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          height:800px;
+      }
+      
+      .subgrid1 div{
+              /* possibly consider changing this subgrid to 
+              just formatting changes in the html ?????*/
+              display: grid;
+              grid-template-rows: auto 4fr;
+          
+          }
+      
+              .title {
+                  background-color: rgba(187, 172, 187, 0.842);
+              }
+      
+              .content{
+                  background-color: rgb(252, 231, 252);
+              }
+      
+       .subgrid2 div{
+           display: grid;
+           grid-template-rows: 5fr 1fr;
+          background-color: bisque;
+          }
+      

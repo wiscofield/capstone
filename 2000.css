@@ -1,7 +1,8 @@
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background: black;
-  height: 100%;
+  background: rgb(255,137,245);
+  background: linear-gradient(180deg, rgba(255,137,245,1) 0%, rgba(255,255,255,1) 100%);height: 100%;
+  margin: 0;
 }
 
 /*
@@ -52,31 +53,22 @@ BLOG TITLE AND SUBTITLE
 }
 
 #img1{
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   height: 270px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   float: left;
   box-shadow: 10px 10px magenta;
 }
 
 #img2 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   height: 270px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   float: left;
   box-shadow: 10px 10px yellowgreen;
 }
 
 #img3 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   height: 270px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   float: left;
   box-shadow: 10px 10px magenta;
 }
@@ -84,7 +76,10 @@ BLOG TITLE AND SUBTITLE
 .subtitle {
   color: black;
   background-color: #66ffcc;
-  justify-content: center;
+  padding: 5px;
+  border-style: double none;
+  border-color: black;
+  font-size: 15px;
 }
 
 /*
@@ -97,8 +92,8 @@ SECOND NAV BAR
   background-color: yellowgreen;
   overflow: hidden;
   font-family: "Arial", Helvetica, sans-serif;
-  justify-content: center;
-  padding: 2px;
+  padding: 5px 0;
+  margin-bottom: 20px;
 }
 
 .nav2 a {
@@ -117,15 +112,34 @@ SECOND NAV BAR
 
 /*
 ***********************************************************************************
-BLOG POSTS
+BLOG
 ***********************************************************************************
 */
 
+.wrapper {
+  display: grid;
+  grid-template-areas: 'gridleft-left grid-left grid-right';
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 5px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.ad-container {
+  grid-area: gridleft-left;
+}
+
+.post-container {
+  grid-area: grid-left;
+}
+
 .post {
-  color: white;
-  width: 600px;
-  border: 1px solid;
-  padding: 10px;
+  border: 1px solid grey;
+  color: black;
+  padding: 20px;
+  background-color: white;
+  margin: 0 5px 10px 5px;
+  padding-top: 0;
 }
 
 h2{
@@ -138,50 +152,52 @@ h2{
 
 h3{
   color: grey;
+  text-decoration: underline;
 }
-
-.screen {
-  height: calc(100vh - 50px);
-  color: red;
-  border: 1px solid;
-}
-
-.rightMargin {
-  width: 410px;
-  height: 100px;
-  border: 1px solid;
-  color: yellow;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-
-}
-
-.leftMargin {
-  width: 410px;
-  height: 100px;
-  border: 1px solid;
-  color: yellow;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-}
-
 
 /*
 ***********************************************************************************
-ARCHIVE
+ARCHIVE CLASS
 ***********************************************************************************
 */
 
 .archive {
   color: white;
-  width: 100px;
-  border: 1px solid;
-  padding: 10px;
+  grid-area: grid-right;
+  width: 170px;
+  background: rgb(255,137,245);
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .archive-list {
-  color: yellowgreen;
-  float: left;
+  text-align: left;
+}
+
+#email {
+  font-style: italic;
+}
+
+#ad1 {
+  height: auto;
+  width: 170px;
+}
+
+#ad3 {
+  height: auto;
+  width: 170px;
+}
+
+#ad4 {
+  height: auto;
+  width: 170px;
+}
+
+footer {
+  color: grey;
+  background-color: #66ffcc;
+  padding: 5px;
+  border-style: double none none none;
+  border-color: black;
+  margin-top: 15px;
 }

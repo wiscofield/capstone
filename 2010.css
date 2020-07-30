@@ -19,12 +19,12 @@ header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header h2 {
-  color: teal;
+  color: #611536;
 }
 
 /*NAVBAR*/
 nav {
-  background-color: orange;
+  background-color: #AF3B6E;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 40px;
@@ -55,15 +55,15 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a#this-page {
-  background-color: rgb(207, 135, 0);
+  background-color: #611536;
 }
 /*hover events*/
 nav ul li a:hover {
   cursor: pointer;
-  background-color: rgb(255, 215, 140);
+  background-color: #ce6b96;
 }
 nav ul li a#this-page:hover {
-  background-color: rgb(255, 215, 140);
+  background-color: #ce6b96;
 }
 
 /*IMAGE BANNER*/
@@ -74,9 +74,13 @@ div.img-banner {
 }
 div.bottom-banner {
   height: 20px;
-  background-color: orange;
+  background-color: #AF3B6E;
   box-shadow: 0px 3px 10px -6px black, 0px -3px 10px -6px black;
   position: relative;
+}
+div.img-banner img {
+  width: 100%;
+  clip-path: inset(0px 0px 220px 0px);
 }
 
 /*POSTS*/
@@ -129,7 +133,7 @@ main {
 }
 div.bottom-border {
   height: 20px;
-  background-color: orange;
+  background-color: #AF3B6E;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

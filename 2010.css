@@ -52,6 +52,7 @@ nav ul li a {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0px;
+  text-decoration: none;
 }
 nav ul li a#this-page {
   background-color: rgb(207, 135, 0);
@@ -92,6 +93,22 @@ div.post {
   padding-top: 0px;
   background-color: white;
   border: solid lightgray;
+}
+
+/*Image posts*/
+div.post .img-post {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+div.post .img-post .image {
+  grid-column: 2;
+}
+div.post .img-post .image img {
+  height: 100%;
+  width: 100%;
+}
+div.post .img-post .text {
+  grid-column: 1;
 }
 
 /*POST TITLES/DATES*/

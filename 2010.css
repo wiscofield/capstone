@@ -19,12 +19,12 @@ header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header h2 {
-  color: teal;
+  color: #611536;
 }
 
 /*NAVBAR*/
 nav {
-  background-color: orange;
+  background-color: #AF3B6E;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 40px;
@@ -52,17 +52,18 @@ nav ul li a {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0px;
+  text-decoration: none;
 }
 nav ul li a#this-page {
-  background-color: rgb(207, 135, 0);
+  background-color: #611536;
 }
 /*hover events*/
 nav ul li a:hover {
   cursor: pointer;
-  background-color: rgb(255, 215, 140);
+  background-color: #ce6b96;
 }
 nav ul li a#this-page:hover {
-  background-color: rgb(255, 215, 140);
+  background-color: #ce6b96;
 }
 
 /*IMAGE BANNER*/
@@ -70,10 +71,16 @@ div.img-banner {
   height: 200px;
   background-color: lightblue;
   margin: 0px;
+  position: relative;
+  overflow: hidden;
+}
+div.img-banner img {
+  width: 100%;
+  min-height: 200px;
 }
 div.bottom-banner {
   height: 20px;
-  background-color: orange;
+  background-color: #AF3B6E;
   box-shadow: 0px 3px 10px -6px black, 0px -3px 10px -6px black;
   position: relative;
 }
@@ -94,6 +101,22 @@ div.post {
   border: solid lightgray;
 }
 
+/*Image posts*/
+div.post .img-post {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+div.post .img-post .image {
+  grid-column: 2;
+}
+div.post .img-post .image img {
+  height: 100%;
+  width: 100%;
+}
+div.post .img-post .text {
+  grid-column: 1;
+}
+
 /*POST TITLES/DATES*/
 div.post h2 {
   margin-bottom: 0px;
@@ -112,7 +135,7 @@ main {
 }
 div.bottom-border {
   height: 20px;
-  background-color: orange;
+  background-color: #AF3B6E;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

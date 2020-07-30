@@ -1,3 +1,6 @@
+// source: https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/
+
+
 function setupTypewriter(t) {
   var HTML = t.innerHTML;
 
@@ -7,7 +10,7 @@ function setupTypewriter(t) {
       tag = "",
       writingTag = false,
       tagOpen = false,
-      typeSpeed = 100,
+      typeSpeed = 0,
   tempTypeSpeed = 0;
 
   var type = function(){

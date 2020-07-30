@@ -1,33 +1,70 @@
  html{
-     font-family: "Playfair Display", serif;
      font-size: 20px;
           padding: 30px;
       }
       
       .header{
-          background-color: rgb(231, 198, 88);
+          /* background-color: aliceblue; */
           padding: 0.2em;
           border-bottom-width: 2px;
           border-bottom-color: rgba(11, 11, 68, 0.541);
       }
-      /* .nav {
-          background-color: rgba(63, 156, 236, 0.829), 0.925);   
-      } 
-      THIS DIDN'T SEEM TO WORK.... */
+     
+      .serif{
+        font-family: 'Source Serif Pro', serif;
+      }
+      .sans{
+        font-family: 'Source Sans Pro', sans-serif;
+      }
       
       #namehead{
-          font-size: 35px;
-          /* font-weight: bold; */
+          font-size: 55px;
+          font-weight: 800;
       }
       
-   
-      
-      .container{
-          display: grid;
-          grid-template-columns: 3fr 1fr;
-          height:800px;
-      }
-      
+
+  
+        nav {
+            font-size: 18px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: relative;
+            /* position: ; */
+        }
+        nav ul {
+            list-style-type: none;
+            padding-top: 7px;
+            padding-left: 20px;
+        }
+        nav ul li {
+            display: inline;
+            font-size: 18px;
+            text-decoration: none;
+            /* margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px; */
+            padding-bottom: 6px;
+            padding-top: 7px;
+            padding-right: 5px;
+            padding-left: 5px;
+          
+        }
+        nav ul li a {
+            color: rgba(0, 0, 0, 0.541);
+            padding-bottom: 6px;
+            padding-top: 7px;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin: 0px;
+        }
+        
+
+            .container{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                height:800px;
+            }
+            
       .subgrid1 div{
               /* possibly consider changing this subgrid to 
               just formatting changes in the html ?????*/
@@ -37,16 +74,19 @@
           }
       
               .title {
-                  background-color: rgba(187, 172, 187, 0.842);
+                  /* background-color: rgba(187, 172, 187, 0.842); */
               }
       
               .content{
-                  background-color: rgb(252, 231, 252);
+                  /* background-color: rgb(252, 231, 252); */
               }
       
        .subgrid2 div{
            display: grid;
            grid-template-rows: 5fr 1fr;
-          background-color: bisque;
+          /* background-color: bisque; */
           }
       
+
+
+

@@ -2,7 +2,8 @@ html{
     font-size: 18px;
     padding: 50px;
     font-family: 'Heebo', sans-serif;
-     }
+    font-weight: 900;
+    }
 
 body{
    height:100%;
@@ -107,9 +108,12 @@ div.blogname *{
          }
          
          .meta ul li {
-               padding-inline-start: 0px;
+               padding: 0px;
                display: list-item;
                list-style-type: none;
+               text-decoration: underline;
+               text-decoration: overline;
+               text-decoration: rgba(0, 0, 0, 0.404);
          }
 
        .postnav a:hover {
@@ -137,40 +141,69 @@ div.blogname *{
 
        .text p{
            text-indent: 10px;
-           line-height: 22px;
+           line-height: 30px;
+       }
+       .text .intro{
+           margin-bottom: 0px;
+           font-weight: 900;
+           font-size: 24px;
+       }
+
+       .text ol{
+           line-height: 38px;
+           padding-top:0px;
+           padding-left:35px;
+       }
+       .text h4{
+           font-size: 24px;
+           padding: 0px;
        }
       
-       /* #martypic{
-           max-width: 250px;
-           height: auto;
-       } */
+       div.author{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    } 
+
+    .author li{
+        list-style-type: none;
+    }
+    #martybio{
+        text-align: justify;
+    }
+
+    #martypic{
+        width: auto;
+        height: 287px;
+    }
+
+    #archivetitle{
+        list-style-type: none;
+    }
 
        .archive .serif{
            text-align: center;
-           margin:auto
+           height: 20px;
        }
 
        .archive ul li{
            font-size: 18px;
            font-weight: 900;
+           line-height: 35px;
+           grid-template-rows: 0px;
        }
 
       /* This is the aside column being split into rows */
-      /* .subgrid2 div{
+      .subgrid2 div{
           display: grid;
-          grid-template-rows: 5fr 1fr;
+          grid-template-rows: 60% 40%;
          }
 
-         div.author{
-             display: flex;
-             justify-content: normal;
-             align-items: center;
-             padding: 0px;
-             align-self: flex-start;
-             flex-wrap: nowrap;  
-             padding-left: 45px;
-             padding-top:45px; 
-         } */
+         
 
        /* adding borders between the blog post itself and the side section */
        div.container{

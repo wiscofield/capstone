@@ -1,0 +1,143 @@
+html * {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+  background-image: url('media/noise_pattern_7.jpg');
+  background-repeat: repeat;
+  background-color: white;
+}
+
+header {
+  margin-left: calc(4% + 20px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+header h1 {
+  font-size: 3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header h2 {
+  color: #611536;
+}
+
+/*NAVBAR*/
+nav {
+  background-color: #AF3B6E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 40px;
+  position: relative;
+  box-shadow: 0px 2px 10px -6px black;
+}
+nav ul {
+  list-style-type: none;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+nav ul li {
+  display: inline;
+  font-size: 1.5em;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: -4px;
+}
+nav ul li a {
+  color: white;
+  text-shadow: 1px 1px black;
+  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px;
+  text-decoration: none;
+}
+nav ul li a#this-page {
+  background-color: #611536;
+}
+/*hover events*/
+nav ul li a:hover {
+  cursor: pointer;
+  background-color: #ce6b96;
+}
+nav ul li a#this-page:hover {
+  background-color: #ce6b96;
+}
+
+/*IMAGE BANNER*/
+div.img-banner {
+  height: 200px;
+  background-color: lightblue;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+}
+div.img-banner img {
+  width: 100%;
+  min-height: 200px;
+}
+div.bottom-banner {
+  height: 20px;
+  background-color: #AF3B6E;
+  box-shadow: 0px 3px 10px -6px black, 0px -3px 10px -6px black;
+  position: relative;
+}
+
+/*POSTS*/
+div.post-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f8f8f8;
+}
+div.post {
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  padding-top: 0px;
+  background-color: white;
+  border: solid lightgray;
+}
+
+/*Image posts*/
+div.post .img-post {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+div.post .img-post .image {
+  grid-column: 2;
+}
+div.post .img-post .image img {
+  height: 100%;
+  width: 100%;
+}
+div.post .img-post .text {
+  grid-column: 1;
+}
+
+/*POST TITLES/DATES*/
+div.post h2 {
+  margin-bottom: 0px;
+}
+div.post h3 {
+  margin-top: 0px;
+  border-bottom: solid lightgray;
+}
+
+/*MAIN*/
+main {
+  margin: 4%;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: pink;
+}
+div.bottom-border {
+  height: 20px;
+  background-color: #AF3B6E;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px -2px 10px -6px black;
+}

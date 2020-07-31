@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+a {
+  color: #0f0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#typewriter {
+  font-family: Courier, monospace;
+  color: white;
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#typewriter:after {
+  content: "|";
+  animation: blink 550ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+#welcome {
+  color: #0f0;
+}

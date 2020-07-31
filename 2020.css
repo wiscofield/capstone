@@ -1,92 +1,229 @@
- html{
-     font-size: 20px;
-          padding: 30px;
-      }
-      
-      .header{
-          /* background-color: aliceblue; */
-          padding: 0.2em;
-          border-bottom-width: 2px;
-          border-bottom-color: rgba(11, 11, 68, 0.541);
-      }
-     
-      .serif{
-        font-family: 'Source Serif Pro', serif;
-      }
-      .sans{
-        font-family: 'Source Sans Pro', sans-serif;
-      }
-      
-      #namehead{
-          font-size: 55px;
-          font-weight: 800;
-      }
-      
+html{
+    font-size: 18px;
+    padding: 50px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    }
 
-  
-        nav {
-            font-size: 18px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            height: relative;
-            /* position: ; */
-        }
-        nav ul {
-            list-style-type: none;
-            padding-top: 7px;
-            padding-left: 20px;
-        }
-        nav ul li {
-            display: inline;
-            font-size: 18px;
-            text-decoration: none;
-            /* margin-left: 0px;
-            margin-right: 0px;
-            padding: 0px; */
-            padding-bottom: 6px;
-            padding-top: 7px;
-            padding-right: 5px;
-            padding-left: 5px;
-          
-        }
-        nav ul li a {
-            color: rgba(0, 0, 0, 0.541);
-            padding-bottom: 6px;
-            padding-top: 7px;
-            padding-right: 5px;
-            padding-left: 5px;
-            margin: 0px;
-        }
-        
+body{
+   height:100%;
+   max-width: 1200px;
+   margin-right: auto;
+   margin-left: auto;
+}
+.serif{
+   font-family: 'Playfair Display', serif;
+ }
+/* *HEADER* */
+header{
+   display: flex;
+   /* background-color: aliceblue; */
+   justify-content: normal;
+   align-items: center;
+   padding: 0px;
+   align-self: flex-start;
+   flex-wrap: nowrap;   
+}
+div.blogname *{
+   display:inline-flex;
+}
+   /* to make HELLO big and diff font */
+   #hello{ 
+         font-size: 75px;
+         font-weight: 900;
+         margin-left: 0px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         color: black;
+   }
+   /* this is the "this is a blog!" part */
+   #sub-blogname{
+       align-self: flex-end;
+       color: rgba(119, 119, 119, 0.384);
+       font-weight: 900;
+       font-size: 25px;
+   }
+   
+   
 
-            .container{
-                display: grid;
-                grid-template-columns: 3fr 1fr;
-                height:800px;
-            }
-            
-      .subgrid1 div{
-              /* possibly consider changing this subgrid to 
-              just formatting changes in the html ?????*/
-              display: grid;
-              grid-template-rows: auto 4fr;
-          
-          }
-      
-              .title {
-                  /* background-color: rgba(187, 172, 187, 0.842); */
-              }
-      
-              .content{
-                  /* background-color: rgb(252, 231, 252); */
-              }
-      
-       .subgrid2 div{
-           display: grid;
-           grid-template-rows: 5fr 1fr;
-          /* background-color: bisque; */
-          }
-      
+   nav {
+       display: flex;
+       font-size: 20px;
+       justify-self: right;
+       margin-block-start: 0px;
+       margin-block-end: 0px;
+       float: right;
+       
+   }
+       nav ul * {
+           list-style-type: none;
+           /* padding-top: 0px;
+           padding-left: 7px; */
+           /* margin-left: 0px;
+           margin-right: 0px;
+           padding: 0px; */
+       }
+       nav li{
+           display: inline;
+       }
+       nav ul li a {
+           color: rgba(0, 0, 0, 0.699);
+           padding: 10px 7px;
+           line-height:0.7;
+           text-decoration: none;
+       }
+       .headnav{
+           padding-bottom: 50px;
+       }
+       .headnav a:hover {
+           text-decoration: none;
+           color: rgba(223, 222, 222, 0.411);
+       }
+       .headnav a.active{
+           color: rgba(153, 153, 153, 0.411);
+       }
 
 
+   /* ********MAIN POST AND CSS GRID******** */
+
+   /* First I split the page into two columns */
+   .container{
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+   }
+       /*then, each column into two different rows   */
+     .subgrid1 div{
+             display: grid;
+             grid-template-rows: auto 4fr;
+         }
+
+         nav.postnav{
+           display: flex;
+           justify-self: left;
+           margin-block-start: 0px;
+           margin-block-end: 0px;
+           padding-inline-start: 0px;
+           align-content: flex-start;
+           font-size: 15px;
+         }
+         
+         .meta ul li {
+               padding: 0px;
+               display: list-item;
+               list-style-type: none;
+               text-decoration: underline;
+               text-decoration: overline;
+               text-decoration: rgba(0, 0, 0, 0.404);
+         }
+
+       .postnav a:hover {
+           text-decoration: none;
+           color: rgba(223, 222, 222, 0.411);
+       }
+       .postnav a.active{
+           color: rgba(153, 153, 153, 0.411);
+       }
+
+         /* formatting of BLOG POST TITLE */
+         #postname{
+           margin-bottom: 0px;
+           padding-left: 35px;
+           margin-top: 20px;
+           font-weight:600;
+           font-size: 50px;
+       }
+
+       /* formatting the text in the post section */
+       div.text{
+           margin-left: 80px;
+           padding-right: 46px;
+       }
+
+       .text p{
+           text-indent: 10px;
+           line-height: 30px;
+       }
+       .text .intro{
+           margin-bottom: 0px;
+           font-weight: 900;
+           font-size: 24px;
+       }
+
+       .text ol{
+           line-height: 38px;
+           padding-top:0px;
+           padding-left:35px;
+       }
+       .text h4{
+           font-size: 24px;
+           padding: 0px;
+       }
+      
+       div.author{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    } 
+
+    .author li{
+        list-style-type: none;
+    }
+    #martybio{
+        text-align: justify;
+    }
+
+    #martypic{
+        width: auto;
+        height: 287px;
+    }
+
+    #archivetitle{
+        list-style-type: none;
+    }
+
+       .archive .serif{
+           text-align: center;
+           height: 20px;
+       }
+
+       .archive ul li{
+           font-size: 18px;
+           font-weight: 900;
+           line-height: 35px;
+           grid-template-rows: 0px;
+       }
+
+      /* This is the aside column being split into rows */
+      .subgrid2 div{
+          display: grid;
+          grid-template-rows: 60% 40%;
+         }
+
+         
+
+       /* adding borders between the blog post itself and the side section */
+       div.container{
+           margin: auto;
+           border-left: none;
+           border-right: none;
+           border-top-style: solid;
+           border-top-width: 4px;
+           border-top-color: black;
+           border-bottom-style: solid;
+           border-bottom-width: 4px;
+           border-bottom-color: black;
+       }
+   
+       div.aside{
+           border-top: none;
+           border-bottom: none;
+           border-right: none;
+           border-left-style: solid;
+           border-left-width: 4px;
+           border-left-color: black;
+       }
 
